@@ -1,0 +1,13 @@
+@media screen and (max-width: 370px) {
+    .navbox-tiles .tile .icon .fa { font-size: 25px; }
+    .navbox-tiles .tile .title {
+      padding: 3px;
+      font-size: 11px;
+    }
+}
+@media screen and (max-width: 576px) {
+    body{margin-bottom: 100px;}
+}
+@media screen and (min-width: 577px) {
+    .phone_view{display: none;}
+}

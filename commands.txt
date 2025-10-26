@@ -1,0 +1,3 @@
+vendor folder delete command
+rmdir /s /q vendor
+
