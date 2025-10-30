@@ -7,7 +7,6 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
 use App\Models\inst_info;
 use DB;
-use App\Http\Controllers\Controller;
 use App\Helpers\SiteHelper;
 
 class AppServiceProvider extends ServiceProvider

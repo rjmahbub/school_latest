@@ -23,6 +23,7 @@ use App\Http\Controllers\AccountController;
 use App\Http\Controllers\ReferController;
 use App\Http\Controllers\DeepRelationController;
 use SimpleSoftwareIO\QrCode\Facades\QrCode;
+use App\Http\Controllers\ExcelController;
 
 // require __DIR__.'/auth.php';
 
@@ -295,6 +296,17 @@ Route::get('/clear-cache', function() {
     $exitCode = Artisan::call('config:cache');
     return '<h1>Clear Config cleared</h1>';
 });
+
+//excel
+Route::get('/upload', [ExcelController::class, 'showForm']);
+Route::post('/upload', [ExcelController::class, 'upload'])->name('excel.upload');
+
+
+
+
+
+
+
 Route::view('/loading','loading_animation');
 
 

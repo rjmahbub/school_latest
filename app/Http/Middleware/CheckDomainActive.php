@@ -4,7 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
+use App\Helpers\SiteHelper;
 
 class CheckDomainActive
 {
@@ -17,11 +17,11 @@ class CheckDomainActive
      */
     public function handle(Request $request, Closure $next)
     {
-        $c = new Controller;
-        $prefix = $c->prefix(0);
-        $prefixMain = $c->prefixMain;
+        $prefix = SiteHelper::prefix(0);
+        $prefixMain = SiteHelper::$prefixMain;
+
         if($prefix !== $prefixMain){
-            $isNotActive = $c->checkDomainActive($prefix);
+            $isNotActive = SiteHelper::checkDomainActive($prefix);
             if($isNotActive){
                 return $isNotActive;
             }

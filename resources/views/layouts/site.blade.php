@@ -29,7 +29,7 @@
     <script src="/public/assets/plugins/dropzone/dropzone.min.js"></script>
     <script src="/public/assets/plugins/dropzone/cropper.js"></script>
 </head>
-<body style="background-color:#f2faf5;" class="container myShadow antialiased">
+<body style="background-color:#f2faf5; overflow-y:hidden" class="container myShadow antialiased">
 <section class="header">
     <div class="row">
         <?php

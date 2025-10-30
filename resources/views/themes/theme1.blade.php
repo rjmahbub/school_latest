@@ -176,7 +176,7 @@
             <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight" data-wow-delay="400ms">
                 <div class="inner-box">
                     <figure class="image">
-                        <a href="blog-single.html"><img src="/public/uploads/{{ $prefix }}/video_gallery/{{ $video->img }}"></a>
+                        <a href="blog-single.html"><img style="height:200px" src="/public/uploads/{{ $prefix }}/video_gallery/{{ $video->img }}"></a>
                         <a href="{{ $video->link }}" class="play-now play_btn" data-fancybox="gallery" data-caption=""><i class="icon flaticon-play-button-3" aria-hidden="true"></i><span class="ripple"></span></a>
                     </figure>
                 </div>
